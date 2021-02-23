@@ -11,10 +11,10 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/amplitude/Amplitude-iOS",
-      .exact(5, 3, 0)),
+      .exact("5.3.0")),
     .package(
       url: "https://github.com/segmentio/analytics-ios",
-      .exact(4, 1, 3))
+      .exact("4.1.3"))
   ],
   targets: [
     .target(
