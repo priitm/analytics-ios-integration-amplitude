@@ -14,7 +14,7 @@ let package = Package(
       .exact("5.3.0")),
     .package(
       url: "https://github.com/segmentio/analytics-ios",
-      .exact("4.1.3"))
+      .exact("4.1.2"))
   ],
   targets: [
     .target(
