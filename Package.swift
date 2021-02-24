@@ -24,11 +24,11 @@ let package = Package(
   targets: [
     .target(
       name: "SegmentAmplitude",
-      dependencies: ["Segment", "Amplitude"],
-      path: "Pod",
-      cSettings: [
-        .headerSearchPath("Classes"),
-      ]
+      dependencies: ["Segment", "Amplitude"]//,
+      // path: "Pod",
+      // cSettings: [
+      //   .headerSearchPath("Classes"),
+      // ]
     ),
   ]
 )
