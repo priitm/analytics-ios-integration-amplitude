@@ -4,18 +4,19 @@ import PackageDescription
 let package = Package(
   name: "SegmentAmplitude",
   platforms: [
-    .iOS(.v10)
+    .iOS(.v10),
+    .macOS(.v10_14)
   ],
   products: [
     .library(
       name: "SegmentAmplitude",
-      targets: ["SegmentAmplitude"]),
+      targets: ["SegmentAmplitudeTarget"]),
   ],
   dependencies: [
     .package(
       name: "Amplitude",
       url: "https://github.com/amplitude/Amplitude-iOS",
-      .exact("5.2.1")),
+      .exact("7.0.1")),
     .package(
       name: "Segment",
       url: "https://github.com/segmentio/analytics-ios",
@@ -23,7 +24,7 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "SegmentAmplitude",
+      name: "SegmentAmplitudeTarget",
       dependencies: ["Segment", "Amplitude"],
       path: "Pod",
       cSettings: [
