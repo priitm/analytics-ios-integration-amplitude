@@ -10,7 +10,7 @@ let package = Package(
   products: [
     .library(
       name: "SegmentAmplitude",
-      targets: ["SegmentAmplitudeTarget"]),
+      targets: ["SegmentAmplitude"]),
   ],
   dependencies: [
     .package(
@@ -24,7 +24,7 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "SegmentAmplitudeTarget",
+      name: "SegmentAmplitude",
       dependencies: ["Segment", "Amplitude"],
       path: "Pod",
       cSettings: [
