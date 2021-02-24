@@ -15,7 +15,7 @@ let package = Package(
     .package(
       name: "Amplitude",
       url: "https://github.com/amplitude/Amplitude-iOS",
-      .exact("7.3.0")),
+      .exact("5.2.1")),
     .package(
       name: "Segment",
       url: "https://github.com/segmentio/analytics-ios",
